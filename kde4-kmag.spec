@@ -1,13 +1,13 @@
 %define		_state		stable
-%define		orgname		kamera
+%define		orgname		kmag
 %define		qtver		4.8.1
 
 Summary:	K Desktop Environment - A screen magnifier
 Summary(pl.UTF-8):	K Desktop Environment - Powiększalnik ekranu
-Name:		kde4-kamera
+Name:		kde4-%{orgname}
 Version:	4.9.0
 Release:	1
-License:	GPLv2
+License:	GPL v2
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
 # Source0-md5:	7b15ced4fc547941ff943462ba4a2bdc
@@ -55,9 +55,14 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/kde4/kcm_kamera.so
-%attr(755,root,root) %{_libdir}/kde4/kio_kamera.so
-%{_datadir}/kde4/services/kamera.desktop
-%{_datadir}/kde4/services/camera.protocol
-%{_kdedocdir}/en/kcontrol/kamera
-%{_datadir}/apps/solid/actions/solid_camera.desktop
+%attr(755,root,root) %{_bindir}/kmag
+%{_desktopdir}/kde4/kmag.desktop
+%dir %{_datadir}/apps/kmag
+%{_datadir}/apps/kmag/kmagui.rc
+%{_iconsdir}/hicolor/*/actions/followmouse.png
+%{_iconsdir}/hicolor/*/actions/hidemouse.png
+%{_iconsdir}/hicolor/*/actions/window.png
+%{_iconsdir}/hicolor/*/apps/kmag.png
+%{_kdedocdir}/en/kmag
+%{_mandir}/man1/kmag.1*
+
