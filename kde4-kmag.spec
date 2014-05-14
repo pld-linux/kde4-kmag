@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - A screen magnifier
 Summary(pl.UTF-8):	K Desktop Environment - Powiększalnik ekranu
 Name:		kde4-%{orgname}
-Version:	4.13.0
+Version:	4.13.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Graphics
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	fb817cc437a0481594bea206365eefb0
+# Source0-md5:	02ec4fcb39469884ca5599e31f8550d6
 URL:		http://www.kde.org/
 BuildRequires:	Qt3Support-devel >= %{qtver}
 BuildRequires:	QtCore-devel >= %{qtver}
