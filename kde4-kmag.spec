@@ -59,10 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_desktopdir}/kde4/kmag.desktop
 %dir %{_datadir}/apps/kmag
 %{_datadir}/apps/kmag/kmagui.rc
-%{_iconsdir}/hicolor/*/actions/followmouse.png
-%{_iconsdir}/hicolor/*/actions/hidemouse.png
-%{_iconsdir}/hicolor/*/actions/window.png
+%{_datadir}/apps/kmag/icons
 %{_iconsdir}/hicolor/*/apps/kmag.png
 %{_kdedocdir}/en/kmag
 %{_mandir}/man1/kmag.1*
-
